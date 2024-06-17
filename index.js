@@ -6,7 +6,7 @@ const { AzureKeyCredential } = require('@azure/core-auth');
 require("dotenv").config();
 
 const endpoint = 'https://mr1-test.cognitiveservices.azure.com/';
-const key = 'f078a9fc0f0045dc8b5726ed0b6cd0f8';
+const key = "4863f1bb43cd4823832abe9bd8bc2b42";
 
 const credential = new AzureKeyCredential(key);
 const client = createClient(endpoint, credential);
