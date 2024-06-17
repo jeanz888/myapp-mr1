@@ -13,11 +13,11 @@ const ApiKeyCredentials = require('@azure/ms-rest-js').ApiKeyCredentials;
  * AUTHENTICATE
  * This single client is used for all examples.
  */
-//const key = process.env.VISION_KEY;
-//const endpoint = process.env.VISION_ENDPOINT;
+const key = process.env.VISION_KEY;
+const endpoint = process.env.VISION_ENDPOINT;
 
-const endpoint = 'https://mr1-test.cognitiveservices.azure.com/';
-const key = 'f078a9fc0f0045dc8b5726ed0b6cd0f8';
+//const endpoint = 'https://mr1-test.cognitiveservices.azure.com/';
+//const key = "4863f1bb43cd4823832abe9bd8bc2b42";
 
 const computerVisionClient = new ComputerVisionClient(
   new ApiKeyCredentials({ inHeader: { 'Ocp-Apim-Subscription-Key': key } }), endpoint);
