@@ -38,7 +38,7 @@ async function analyzeImageFromUrl() {
         iaResult.readResult.blocks.forEach(block => console.log(`Text Block: ${JSON.stringify(block)}`));
     }
 }
-// The error is that the variables `imageUrl` and `features` are not defined in the scope of this function. They need to be passed as arguments or defined elsewhere in the code.
 
+// The error is that the variables `imageUrl` and `features` are not defined in the scope of this function. They need to be passed as arguments or defined elsewhere in the code.
 
 analyzeImageFromUrl();
